@@ -1,0 +1,14 @@
+<h1>Welcome</h1>
+
+<form action="/auth/login" method = 'POST'>
+    <label>
+        E-mail
+        <input name="email" type="email" required value="<%= typeof errorMessage !== 'undefined' ? payload.email : '' %>" />
+    </label>
+    <label>
+        Password
+        <input name="password" type="password" required />
+      </label>
+      <button type="submit">Login</button>
+    </form>
+</form>
